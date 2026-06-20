@@ -22,11 +22,12 @@ That's it, you can now watch the first version of the ACT II POC.
 
 ## Migration planning
 
-The migration planning is  the next one:
+The migration planning is the next one:
 
-| Build Tool | Choice |
-| ----------- | ----------- |
-| React v19 | Personal decision |
-| Build Tool | Vite |
-| Package Manager | pnpm |
-| Styling | Just CSS3 |
+| Build Tool      | Choice      |
+| --------------- | ----------- |
+| Library         | React v19   |
+| Typing          | TS          |
+| Build Tool      | Vite        |
+| Package Manager | pnpm        |
+| Styling         | TailwindCSS |

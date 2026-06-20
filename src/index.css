@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --candal-font: "Candal";
+  --meera-font: "Meera Inimai";
+  --sans: "Meera Inimai", system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: "Candal", system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  /* colors ported from legacy/index.html and legacy/elements/*.html */
+  --color-white: #fff;
+  --color-brand-blue: #0091ff;
+  --color-gradient-blue-1: #0091ff;
+  --color-gradient-blue-2: #0a7ada;
+  --color-gradient-blue-3: #0b64b5;
+  --color-gradient-blue-4: #084e92;
+  --color-gradient-blue-5: #043a71;
+  --color-menu-bg: #043a71;
+  --color-menu-text: #efc036;
+  --color-modal-overlay: rgba(11, 0, 113, 0.4);
+  --color-modal-container-bg: rgba(255, 255, 255, 0.3);
+  --color-modal-close-bg: #0199da;
+  --color-facebook-button-bg: #2556a1;
+
+  font: 18px/145% var(--meera-font);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+.candal-font-family {
+  font-family: var(--candal-font);
+}
+
+a.active {
+  color: var(--color-white);
+}
