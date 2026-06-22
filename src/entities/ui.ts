@@ -9,5 +9,21 @@ export interface SocialItem {
   link: string;
 }
 
+export interface FlavorItem {
+  product: string;
+  image: string;
+}
+
+export interface VideoItem {
+  hashtag: string;
+  image: string;
+  url: string;
+}
+
+export interface ImageItem {
+  description: string;
+  image: string;
+}
+
 export type NavOptions = NavItem[];
 export type SocialMedia = SocialItem[];

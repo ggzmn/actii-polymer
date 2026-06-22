@@ -48,3 +48,13 @@
 a.active {
   color: var(--color-white);
 }
+
+body {
+  background-image: radial-gradient(
+    circle,
+    var(--color-gradient-blue-1),
+    var(--color-gradient-blue-2),
+    var(--color-gradient-blue-3),
+    var(--color-gradient-blue-4)
+  );
+}
