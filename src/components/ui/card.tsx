@@ -15,6 +15,14 @@ export default function Card({
     <div
       className="flex flex-col justify-center content-center cursor-pointer"
       onClick={handleClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleClick();
+        }
+      }}
+      role="button"
+      tabIndex={0}
     >
       <div className="w-full">{children}</div>
       <div className="bg-white flex flex-1 justify-between p-2">

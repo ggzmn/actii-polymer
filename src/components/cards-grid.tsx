@@ -14,11 +14,15 @@ export default function CardsGrid({ list }: { list: SelectedCard[] }) {
           key={item.image}
           copyright="ACT II"
           icon={"/img/content/icon-palomitas.png"}
-          handleClick={() =>
-            setSelected({ image: item.image, imageAlt: item.alt })
-          }
+          handleClick={() => setSelected({ ...item })}
         >
-          {<img src={item.image} className="w-full h-auto" alt={item.alt} />}
+          {
+            <img
+              src={item.image}
+              className="w-full h-auto"
+              alt={item.imageAlt}
+            />
+          }
         </Card>
       ))}
     </ContentWrapper>
