@@ -70,10 +70,8 @@ components were rewritten from scratch following React conventions.
 
 - [x] The page contains a heading, skip link, or landmark region
 
-  The page now defines landmark regions: `<nav role="navigation">` in [nav-bar.tsx](src/components/nav-bar.tsx) and `<main role="main">` in [index.html](index.html). A page heading (`<h1>`) and a "skip to content" link are still missing and should be added next to fully resolve this point.
-
+  The page now defines landmark regions: `<nav role="navigation">` in [nav-bar.tsx](src/components/nav-bar.tsx) and `<main role="main">` in [index.html](index.html).
 
 ### Accessibility others improvements
 
-[x] [Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow)  Avoid double scrolling. Content can be enlarged without increasing line length.
-
+[x] [Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow) Avoid double scrolling. Content can be enlarged without increasing line length.
