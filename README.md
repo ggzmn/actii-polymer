@@ -1,10 +1,12 @@
 # ACT II
 
-## First movements
+![Preview](public/preview.png)
 
-This POC was developed in 2018, so in order to run it with Polymer and Bower there are some characteristics to keep in mind.
+## Getting started
 
-If you want to run the legacy code, please follow these commands:
+This POC was developed in 2018. To run it with Polymer and Bower, some prerequisites are required.
+
+To run the legacy code, execute the following commands:
 
 ```sh
 nvm install 8.17.0
@@ -12,24 +14,22 @@ npx bower install
 polymer serve --open
 ```
 
-If you have trouble with `polymer serve`, you can install it globally:
+If `polymer serve` returns an error, install it globally:
 
 ```sh
 npm install -g polymer-cli
 ```
 
-That's it, you can now watch the first version of the ACT II POC.
+The legacy version of the ACT II POC is now available in the browser.
 
 ## Challenges
 
-The biggest challenge was running the original POC. Since Polymer is deprecated
-and relies on Bower, it requires Node 8.17.0 to work correctly. Modern Node
+The main challenge was running the original POC. Since Polymer is deprecated
+and depends on Bower, it requires Node 8.17.0 to work correctly. Modern Node
 versions break the dependency resolution, which is why the legacy setup requires
 `nvm` to switch versions before installing dependencies.
 
 ## Migration planning
-
-The migration planning is the next one:
 
 | Category        | Choice      |
 | --------------- | ----------- |
@@ -42,12 +42,11 @@ The migration planning is the next one:
 ## Migration notes
 
 The original POC used Polymer's two-way data binding and native web components.
-The migration to React meant shifting to a unidirectional data flow model, which
-required rethinking how components communicate and manage state.
+The migration to React introduced a unidirectional data flow model, which
+required a different approach to component communication and state management.
 
 Given the simplicity of the original POC, no complex logic was preserved —
 components were rewritten from scratch following React conventions.
-
 
 ## Next steps
 
