@@ -10,7 +10,7 @@ function NavBar({ options, sm }: { options: NavOptions; sm: SocialMedia }) {
   return (
     <nav
       role="navigation"
-      className="bg-(--color-gradient-blue-5) flex justify-between items-center px-8 py-4 text-(--color-menu-text)  font-bold candal-font-family"
+      className="bg-(--color-gradient-blue-5) flex justify-between items-center px-8 py-4 text-(--color-menu-text)  font-bold candal-font-family flex-wrap"
     >
       <div className="flex justify-between items-center gap-4 hover">
         {options.map((option: NavItem) => (
