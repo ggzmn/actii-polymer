@@ -41,6 +41,15 @@
   }
 }
 
+.close-icon::after {
+  content: "\00d7";
+  color: #fff;
+  font-size: 25px;
+  background-color: var(--color-menu-text);
+  border-radius: 3rem;
+  padding: 0.2rem 0.4rem;
+}
+
 .candal-font-family {
   font-family: var(--candal-font);
 }
