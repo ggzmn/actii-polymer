@@ -50,4 +50,24 @@ components were rewritten from scratch following React conventions.
 
 ## Next steps
 
-- [ ] Accessibility audit and improvements (WCAG 2.1 AA)
+- [] Accessibility audit and improvements (WCAG 2.1 AA)
+
+### Accessibility lighthouse report improvements
+
+![Accessibility](public/accesibility-1.png)
+
+- [x] Image elements do not have [alt] attributes
+
+  All `<img>` elements in the React components now include an `alt` attribute. This lets screen readers describe each image to users who cannot see it.
+
+- [x] Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).
+
+  The social media list in [nav-bar.tsx](src/components/nav-bar.tsx) is a `<ul>` that only contains `<li>` items, each wrapping a `<Link>` and an `<img>`. No other element type is placed as a direct child of the list, so the list structure is valid for assistive technology.
+
+- [x] Document does not have a main landmark.
+
+  The React app is now mounted inside a `<main role="main">` element in [index.html](index.html), instead of rendering directly into a plain `<div>`. This gives screen readers a clear landmark to identify the primary content of the page.
+
+- [x] The page contains a heading, skip link, or landmark region
+
+  The page now defines landmark regions: `<nav role="navigation">` in [nav-bar.tsx](src/components/nav-bar.tsx) and `<main role="main">` in [index.html](index.html). A page heading (`<h1>`) and a "skip to content" link are still missing and should be added next to fully resolve this point.
