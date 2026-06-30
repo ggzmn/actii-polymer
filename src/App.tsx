@@ -14,6 +14,7 @@ function App() {
       <Modal />
       <NavBar options={menu} sm={social} />
       <main id="main-content" role="main">
+        <h1 className="sr-only">PoC ACT II - Made by Gaby(ggzmn)</h1>
         <Outlet />
       </main>
     </GeneralContext>
