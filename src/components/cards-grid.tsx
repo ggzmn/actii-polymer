@@ -1,6 +1,7 @@
 import Card from "@/components/ui/card";
 import ContentWrapper from "@/components/ui/content-wrapper";
-import { GeneralContext, type SelectedCard } from "@/context";
+import { GeneralContext } from "@/context";
+import type { SelectedCard } from "@/entities/ui";
 import { useContext } from "react";
 
 export default function CardsGrid({ list }: { list: SelectedCard[] }) {
@@ -13,7 +14,9 @@ export default function CardsGrid({ list }: { list: SelectedCard[] }) {
           key={item.image}
           copyright="ACT II"
           icon={"/img/content/icon-palomitas.png"}
-          handleClick={() => setSelected({ image: item.image, alt: item.alt })}
+          handleClick={() =>
+            setSelected({ image: item.image, imageAlt: item.alt })
+          }
         >
           {<img src={item.image} className="w-full h-auto" alt={item.alt} />}
         </Card>

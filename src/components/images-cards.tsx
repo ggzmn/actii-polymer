@@ -6,7 +6,7 @@ export default function ImagesCards() {
     <CardsGrid
       list={images.map((item) => ({
         image: item.image,
-        alt: item.description,
+        imageAlt: item.description,
       }))}
     />
   );

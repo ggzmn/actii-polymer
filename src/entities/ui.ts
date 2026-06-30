@@ -3,27 +3,37 @@ export interface NavItem {
   name: string;
 }
 
-export interface SocialItem {
-  red: string;
+export interface Base {
   image: string;
+  imageAlt: string;
+}
+
+export interface SocialItem extends Base {
+  red: string;
   link: string;
 }
 
-export interface FlavorItem {
+export interface FlavorItem extends Base {
   product: string;
-  image: string;
 }
 
-export interface VideoItem {
+export interface VideoItem extends Base {
   hashtag: string;
-  image: string;
   url: string;
 }
 
-export interface ImageItem {
+export interface ImageItem extends Base {
   description: string;
-  image: string;
 }
 
 export type NavOptions = NavItem[];
 export type SocialMedia = SocialItem[];
+
+export interface SelectedCard extends Base {
+  description?: string;
+}
+
+export interface GeneralContextValue {
+  selected: SelectedCard | null;
+  setSelected: (item: SelectedCard | null) => void;
+}

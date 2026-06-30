@@ -67,3 +67,27 @@ body {
     var(--color-gradient-blue-4)
   );
 }
+
+@keyframes modal-overlay-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modal-container-in {
+  from {
+    opacity: 0;
+    scale: 0.96;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.modal-overlay {
+  animation: modal-overlay-in 200ms ease-out forwards;
+}
+
+.modal-container {
+  animation: modal-container-in 250ms ease-out forwards;
+}
