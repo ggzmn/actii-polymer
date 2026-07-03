@@ -50,7 +50,7 @@ components were rewritten from scratch following React conventions.
 
 ## Next steps
 
-- [] Accessibility audit and improvements (WCAG 2.1 AA)
+- [ ] Accessibility audit and improvements (WCAG 2.1 AA)
 
 ### Accessibility lighthouse report improvements
 
@@ -74,4 +74,6 @@ components were rewritten from scratch following React conventions.
 
 ### Accessibility others improvements
 
-[x] [Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow) Avoid double scrolling. Content can be enlarged without increasing line length.
+- [x] [Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow) Avoid double scrolling. Content can be enlarged without increasing line length.
+
+![Accessibility 100% after resolve lighthouse](public/accesibility-2.png)
