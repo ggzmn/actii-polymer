@@ -1,1 +1,4 @@
 pnpm lint
+
+npx tsc --noEmit -p tsconfig.app.json
+

@@ -1,9 +1,0 @@
-Desarrollado por Gabriela
-ggh.gabriela@gmail.com
-
-Iniciar proyecto con bower
-bower init
-bower install polymer#1.9.0 --save
-polymer serve --open
-
-
