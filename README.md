@@ -70,7 +70,7 @@ components were rewritten from scratch following React conventions.
 
 - [x] The page contains a heading, skip link, or landmark region
 
-  The page now defines landmark regions: `<nav role="navigation">` in [nav-bar.tsx](src/components/nav-bar.tsx) and `<main role="main">` in [index.html](index.html).
+  The page now defines landmark regions: `<nav role="navigation">` in [nav-bar.tsx](src/components/nav-bar.tsx) and `<main role="main">` in [App.tsx](src/App.tsx).
 
 ### Accessibility others improvements
 
