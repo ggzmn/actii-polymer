@@ -5,10 +5,12 @@ export default function Card({
   copyright,
   icon,
   handleClick = () => ({}),
+  altIcon,
 }: {
   children: ReactNode;
   copyright: string;
   icon: string;
+  altIcon: string;
   handleClick?: () => void;
 }) {
   return (
@@ -27,7 +29,7 @@ export default function Card({
       <div className="w-full">{children}</div>
       <div className="bg-white flex flex-1 justify-between p-2">
         <div className="min-h-2">
-          <img src={icon} alt={icon} />
+          <img src={icon} alt={altIcon} />
         </div>
         <p className="text-base">{copyright}</p>
       </div>

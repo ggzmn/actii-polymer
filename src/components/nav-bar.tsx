@@ -31,9 +31,11 @@ function NavBar({ options, sm }: { options: NavOptions; sm: SocialMedia }) {
               <Link
                 className="hover:opacity-70 cursor-pointer"
                 to={item.link}
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img className=" font-xs" src={item.image} alt={item.red} />
+                <span className="sr-only">(abre en una nueva pestaña)</span>
               </Link>
             </li>
           ))}
