@@ -13,6 +13,7 @@ export default function CardsGrid({ list }: { list: SelectedCard[] }) {
         <Card
           key={item.image}
           copyright="ACT II"
+          altIcon="Icon's ACT II"
           icon={"/img/content/icon-palomitas.png"}
           handleClick={() => setSelected({ ...item })}
         >
