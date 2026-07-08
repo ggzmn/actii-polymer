@@ -3,7 +3,11 @@ import { flavors, images, videos } from "@/constants/menu";
 
 const all = [
   ...flavors.map((item) => ({ image: item.image, imageAlt: item.product })),
-  ...videos.map((item) => ({ image: item.image, imageAlt: item.url })),
+  ...videos.map((item) => ({
+    image: item.image,
+    imageAlt: item.hashtag,
+    url: item.url,
+  })),
   ...images.map((item) => ({ image: item.image, imageAlt: item.description })),
 ];
 
