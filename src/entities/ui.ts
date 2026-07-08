@@ -31,6 +31,7 @@ export type SocialMedia = SocialItem[];
 
 export interface SelectedCard extends Base {
   description?: string;
+  url?: string;
 }
 
 export interface GeneralContextValue {

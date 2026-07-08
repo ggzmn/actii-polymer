@@ -1,6 +1,13 @@
 import { GeneralContext } from "@/context";
 import { useContext, useEffect, useRef } from "react";
 
+function getYoutubeEmbedUrl(url: string) {
+  const videoId = new URL(url).searchParams.get("v");
+  return videoId
+    ? `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`
+    : url;
+}
+
 export default function Modal() {
   const { selected, setSelected } = useContext(GeneralContext);
   const closeButtonRef = useRef<HTMLDivElement>(null);
@@ -38,7 +45,17 @@ export default function Modal() {
         />
         <div className="f p-2">
           <div className="min-h-2">
-            <img src={selected.image} alt={selected.imageAlt} />
+            {selected.url ? (
+              <iframe
+                src={getYoutubeEmbedUrl(selected.url)}
+                title={selected.imageAlt}
+                className="aspect-video w-[30vw] max-w-3xl"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <img src={selected.image} alt={selected.imageAlt} />
+            )}
           </div>
           <p className="text-base text-white">{selected.description ?? ""}</p>
         </div>

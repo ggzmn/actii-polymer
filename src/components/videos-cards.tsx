@@ -6,7 +6,8 @@ export default function VideoCards() {
     <CardsGrid
       list={videos.map((item) => ({
         image: item.image,
-        imageAlt: item.url,
+        imageAlt: item.hashtag,
+        url: item.url,
       }))}
     />
   );
