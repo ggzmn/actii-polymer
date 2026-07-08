@@ -77,3 +77,9 @@ components were rewritten from scratch following React conventions.
 - [x] [Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow) Avoid double scrolling. Content can be enlarged without increasing line length.
 
 ![Accessibility 100% after resolve lighthouse](public/accesibility-2.png)
+
+- [x] Card icons use meaningful alt text instead of the raw file path, so screen readers describe the icon's purpose rather than reading a file name.
+
+- [x] The modal in [modal.tsx](src/components/ui/modal.tsx) now has a `dialog` role and `aria-modal` attribute, and can be closed from anywhere on the page with the Escape key.
+
+- [x] Fixed a typo in the social link `target` attribute and added `rel="noopener"` plus a "opens in a new tab" notice, so external links behave safely and predictably for all users.
